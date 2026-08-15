@@ -1754,4 +1754,111 @@ footer > p {
         gap: 10px;
     }
 
+}/* =========================
+   PROJECT INQUIRY FORM
+========================= */
+
+.project-form {
+    max-width: 850px;
+    margin: 45px auto 0;
+    padding: 35px;
+    text-align: left;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 16px;
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(10px);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: rgba(255,255,255,0.85);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 15px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 8px;
+    outline: none;
+    color: #ffffff;
+    background: rgba(255,255,255,0.08);
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255,255,255,0.45);
+}
+
+.form-group select {
+    color: #ffffff;
+}
+
+.form-group select option {
+    color: #111111;
+    background: #ffffff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #58b6ff;
+    background: rgba(255,255,255,0.12);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-submit {
+    width: 100%;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #071633;
+    background: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.form-submit:hover {
+    transform: translateY(-3px);
+    background: #58b6ff;
+    color: #ffffff;
+}
+
+@media (max-width: 650px) {
+
+    .project-form {
+        padding: 25px 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
 }

@@ -539,37 +539,104 @@
 
     <div class="cta-content">
 
-        <p class="eyebrow">READY TO GROW ONLINE?</p>
+        <p class="eyebrow">START A PROJECT</p>
 
         <h2>
-            Your next website
-            could be your
-            <em>best investment.</em>
+            Tell us about your
+            <em>next project.</em>
         </h2>
 
         <p>
-            Whether you're launching a new business or taking
-            an existing brand online, let's create a website
-            that represents your business professionally.
+            Complete the short form below and we'll use your
+            information to understand your project and recommend
+            the right solution for your business.
         </p>
 
-        <div class="cta-buttons">
+        <form class="project-form" id="projectForm">
 
-            <a
-                href="https://wa.me/2347062355824?text=Hello%20Mofeoluwa%20Media%2C%20I%27d%20like%20to%20discuss%20a%20website%20project."
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-light">
-                Start a Project →
-            </a>
+            <div class="form-row">
 
-            <a
-                href="#pricing"
-                class="btn btn-outline-light">
-                View Pricing
-            </a>
+                <div class="form-group">
+                    <label for="clientName">Your Name</label>
+                    <input
+                        type="text"
+                        id="clientName"
+                        name="clientName"
+                        placeholder="e.g. Sarah Johnson"
+                        required>
+                </div>
 
-        </div>
+                <div class="form-group">
+                    <label for="businessName">Business Name</label>
+                    <input
+                        type="text"
+                        id="businessName"
+                        name="businessName"
+                        placeholder="e.g. Sarah's Boutique"
+                        required>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="businessType">Business Type</label>
+
+                    <select id="businessType" name="businessType" required>
+                        <option value="">Select your business</option>
+                        <option value="Fashion">Fashion</option>
+                        <option value="Beauty">Beauty</option>
+                        <option value="Food & Restaurant">Food & Restaurant</option>
+                        <option value="E-commerce">E-commerce</option>
+                        <option value="Professional Services">Professional Services</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="budget">Budget</label>
+
+                    <select id="budget" name="budget" required>
+                        <option value="">Select your budget</option>
+                        <option value="₦80,000 – ₦150,000">₦80,000 – ₦150,000</option>
+                        <option value="₦150,000 – ₦250,000">₦150,000 – ₦250,000</option>
+                        <option value="₦250,000+">₦250,000+</option>
+                        <option value="Not sure yet">Not sure yet</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="projectType">What do you need?</label>
+
+                <select id="projectType" name="projectType" required>
+                    <option value="">Choose a service</option>
+                    <option value="Business Website">Business Website</option>
+                    <option value="E-commerce Website">E-commerce Website</option>
+                    <option value="Portfolio Website">Portfolio Website</option>
+                    <option value="Website Redesign">Website Redesign</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Tell us about your project</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Tell us what you want your website to do..."
+                    required></textarea>
+            </div>
+
+            <button type="submit" class="form-submit">
+                Send Project Request on WhatsApp →
+            </button>
+
+        </form>
 
         <div class="cta-contact">
 
