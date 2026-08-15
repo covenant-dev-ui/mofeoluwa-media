@@ -1612,4 +1612,146 @@ footer > p {
         gap: 20px;
     }
 
+}/* =========================
+   FINAL CTA
+========================= */
+
+.cta {
+    position: relative;
+    overflow: hidden;
+    padding: 120px 6%;
+    text-align: center;
+    color: white;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(37, 99, 235, 0.7),
+            transparent 45%
+        ),
+        linear-gradient(
+            135deg,
+            #020b25,
+            #06245f,
+            #0878ed
+        );
+}
+
+.cta::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: -250px;
+    bottom: -300px;
+    border-radius: 50%;
+    background: rgba(37, 99, 235, 0.25);
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    margin: auto;
+}
+
+.cta .eyebrow {
+    color: #8ecbff;
+}
+
+.cta h2 {
+    margin: 20px 0;
+    font-size: clamp(45px, 6vw, 75px);
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.cta h2 em {
+    display: block;
+    color: #58b6ff;
+    font-style: normal;
+}
+
+.cta > .cta-content > p:not(.eyebrow) {
+    max-width: 600px;
+    margin: 30px auto;
+    color: rgba(255,255,255,0.75);
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.btn-light {
+    background: white;
+    color: #071633;
+}
+
+.btn-light:hover {
+    transform: translateY(-3px);
+    background: #e8f4ff;
+}
+
+.btn-outline-light {
+    color: white;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.btn-outline-light:hover {
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-3px);
+}
+
+.cta-contact {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 60px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+
+    font-size: 11px;
+    letter-spacing: 1.5px;
+}
+
+.cta-contact span:last-child {
+    color: rgba(255,255,255,0.55);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .cta {
+        padding: 85px 5%;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+    }
+
+    .cta-contact {
+        flex-direction: column;
+        gap: 10px;
+    }
+
 }
