@@ -1861,4 +1861,14 @@ footer > p {
         gap: 0;
     }
 
+}.logo img {
+    width: 170px;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 135px;
+    }
 }
