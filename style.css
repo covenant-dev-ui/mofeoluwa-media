@@ -1871,4 +1871,28 @@ footer > p {
     .logo img {
         width: 135px;
     }
+}.about-number {
+    font-size: clamp(180px, 25vw, 360px);
+    font-weight: 800;
+    line-height: 0.8;
+    color: transparent;
+    -webkit-text-stroke: 2px #0b63ce;
+    background: linear-gradient(
+        135deg,
+        #0b63ce 0%,
+        #168cff 45%,
+        #061633 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    opacity: 0.95;
+    letter-spacing: -0.08em;
+    user-select: none;
+}@media (max-width: 768px) {
+    .about-number {
+        font-size: 180px;
+        left: -10px;
+        top: 20%;
+        opacity: 0.12;
+    }
 }
